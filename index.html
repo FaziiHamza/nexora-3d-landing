@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexora — Build the Future in 3D</title>
+  <meta name="description" content="Nexora is a next-generation platform for building immersive, intelligent digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="loader"><div class="loader-ring"></div><span>NEXORA</span></div>
+
+  <canvas id="bg"></canvas>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="nav" id="nav">
+    <a href="#" class="logo"><span class="logo-mark"></span>Nexora</a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#stats">Metrics</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a href="#cta" class="btn btn-small">Get Started</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="badge reveal"><span class="dot"></span> Now in public beta — v2.0</div>
+        <h1 class="reveal">Build <span class="gradient-text">immersive</span><br />experiences at light speed</h1>
+        <p class="hero-sub reveal">Nexora fuses real-time 3D, AI and cloud rendering into one elegant platform. Ship stunning products your users can feel.</p>
+        <div class="hero-actions reveal">
+          <a href="#cta" class="btn">Start building free <span class="arrow">→</span></a>
+          <a href="#showcase" class="btn btn-ghost">▶ Watch demo</a>
+        </div>
+        <div class="trusted reveal">
+          <span>Trusted by teams at</span>
+          <div class="logos"><b>VERTEX</b><b>ORBITAL</b><b>LUMEN</b><b>QUANTA</b><b>HELIX</b></div>
+        </div>
+      </div>
+      <div class="scroll-indicator"><span></span></div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Everything you need to<br /><span class="gradient-text">go beyond flat</span></h2>
+      </div>
+      <div class="grid">
+        <article class="card tilt reveal">
+          <div class="icon">◈</div>
+          <h3>Real-time 3D Engine</h3>
+          <p>GPU-accelerated rendering with physically based materials, running at 120fps in any browser.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="icon">✦</div>
+          <h3>AI Scene Generation</h3>
+          <p>Describe a world in plain language and watch Nexora compose geometry, lighting and motion.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="icon">⬡</div>
+          <h3>Edge Cloud Delivery</h3>
+          <p>Assets streamed from 300+ edge locations so every experience loads in under a second.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="icon">⟁</div>
+          <h3>Collaborative Studio</h3>
+          <p>Design together in real time with multiplayer cursors, versioning and instant previews.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="icon">◎</div>
+          <h3>Motion Timeline</h3>
+          <p>Keyframe, scroll-driven and physics animations orchestrated from a single timeline.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="icon">⛨</div>
+          <h3>Enterprise Security</h3>
+          <p>SOC 2 Type II, SSO, granular roles and end-to-end encryption, built in from day one.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase" id="showcase">
+      <div class="showcase-text reveal">
+        <span class="eyebrow">Showcase</span>
+        <h2>Designed for depth.<br /><span class="gradient-text">Engineered for speed.</span></h2>
+        <p>Scroll through this page — the scene behind it reacts to you. That's Nexora: interfaces that move with intention and respond to every gesture.</p>
+        <ul class="checks">
+          <li>Scroll-linked camera choreography</li>
+          <li>Pointer-reactive lighting and parallax</li>
+          <li>Adaptive quality for every device</li>
+        </ul>
+      </div>
+      <div class="showcase-visual reveal">
+        <div class="glass-window tilt">
+          <div class="window-bar"><i></i><i></i><i></i><span>nexora.studio/scene</span></div>
+          <div class="window-body">
+            <div class="orb"></div>
+            <div class="orbit o1"><span></span></div>
+            <div class="orbit o2"><span></span></div>
+            <div class="orbit o3"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" id="stats">
+      <div class="stat reveal"><strong data-count="120">0</strong><span>FPS rendering</span></div>
+      <div class="stat reveal"><strong data-count="300" data-suffix="+">0</strong><span>Edge locations</span></div>
+      <div class="stat reveal"><strong data-count="99" data-suffix=".99%">0</strong><span>Uptime SLA</span></div>
+      <div class="stat reveal"><strong data-count="50" data-suffix="K+">0</strong><span>Creators</span></div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="section-head reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2>Simple plans that <span class="gradient-text">scale with you</span></h2>
+      </div>
+      <div class="plans">
+        <div class="plan tilt reveal">
+          <h3>Starter</h3>
+          <div class="price">$0<small>/mo</small></div>
+          <ul><li>3 projects</li><li>Community support</li><li>1 GB asset storage</li></ul>
+          <a href="#cta" class="btn btn-ghost">Choose Starter</a>
+        </div>
+        <div class="plan featured tilt reveal">
+          <div class="ribbon">Most popular</div>
+          <h3>Pro</h3>
+          <div class="price">$29<small>/mo</small></div>
+          <ul><li>Unlimited projects</li><li>AI scene generation</li><li>100 GB edge storage</li><li>Priority support</li></ul>
+          <a href="#cta" class="btn">Choose Pro</a>
+        </div>
+        <div class="plan tilt reveal">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <ul><li>SSO &amp; audit logs</li><li>Dedicated clusters</li><li>99.99% SLA</li></ul>
+          <a href="#cta" class="btn btn-ghost">Contact sales</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="cta-box reveal">
+        <h2>Ready to step into<br /><span class="gradient-text">the third dimension?</span></h2>
+        <p>Join 50,000+ creators building the next generation of the web.</p>
+        <form class="cta-form" id="ctaForm">
+          <input type="email" placeholder="you@company.com" required />
+          <button class="btn" type="submit">Get early access</button>
+        </form>
+        <p class="form-msg" id="formMsg"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo"><span class="logo-mark"></span>Nexora</a>
+    <p>© 2026 Nexora Labs. Crafted with Three.js.</p>
+    <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">GitHub</a></div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
